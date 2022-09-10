@@ -1,6 +1,8 @@
+import { getStoryline } from "../data/storylines.js"
+
 /*-------------------------------- Constants --------------------------------*/
 
-
+const startBtn = document.querySelector('#start-button')
 
 
 /*---------------------------- Variables (state) ----------------------------*/
@@ -9,7 +11,6 @@ let winner, loser, storyProgress
 
 /*------------------------ Cached Element References ------------------------*/
 
-const startBtn = document.querySelector("#start-button")
 
 
 
@@ -18,8 +19,13 @@ const startBtn = document.querySelector("#start-button")
 /*----------------------------- Event Listeners -----------------------------*/
 
 startBtn.addEventListener('click', () => {
-  console.log('Button is working')
+  const newStory = {
+    text: getStoryline
+  }
+  //console.log('button working')
 })
+story.push(newStory)
+
 
 //Bubbling -We can add an event listener to a top level object, and it can access the individual elements that are nested in the parent element.  Example: 
 
@@ -29,18 +35,23 @@ startBtn.addEventListener('click', () => {
 --------------------------------*/
 
 function init() {
-
-story [null]
-
-// have cast image return if story null
-// have start button display if story null
-// have text intro/prompt display if story null
-// have theme song play if story null
+  story = [null]
+  if (story = null)
+    return
+  // have cast image return if story null
+  // have start button display if story null
+  // have text intro/prompt display if story null
+  // have theme song play if story null
 
   render()
 }
 
-function advance() {
+
+
+function createStory(evt) {
+const isStartButton = evt.target.id === "start-button"
+console.log(isStartButton)
+
   // if user clicked start button return lazlo image
   // if user clicked start button return lazlo story text
   // if user clicked start button return 2 option buttons

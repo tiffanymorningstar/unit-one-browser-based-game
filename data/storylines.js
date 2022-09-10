@@ -30,7 +30,7 @@ const storyLines = [
 ]
 
 function getStoryline() {
-  return storyLines[]
+  // return storyLines[return storyLines[Math.floor(Math.random() * storyLines.length)]]
 }
 
 export {
