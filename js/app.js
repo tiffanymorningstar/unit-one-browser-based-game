@@ -36,8 +36,8 @@ story.push(newStory)
 
 function init() {
   story = [null]
-  if (story = null)
-    return
+  // if (story = null)
+  //   return
   // have cast image return if story null
   // have start button display if story null
   // have text intro/prompt display if story null
@@ -49,8 +49,11 @@ function init() {
 
 
 function createStory(evt) {
-const isStartButton = evt.target.id === "start-button"
-console.log(isStartButton)
+  const isStartButton = evt.target.id === "start-button"
+  const newStory = {
+    text: 
+}
+  console.log(isStartButton)
 
   // if user clicked start button return lazlo image
   // if user clicked start button return lazlo story text
