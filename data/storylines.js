@@ -27,22 +27,13 @@ const storyLines = [
   "You hand the Witch Skin Hat to Simon The Devious.  He is so thrilled by your gesture, he treats you to a round of alcohol infused blood on the house.  You, Simon, and his gang ‘the Leatherskins’ party into the early hours of the morning.  Inebriated by the alcohol, you pass out under a tree outside the club.  The rays of the morning light burn your body to an instant crisp.",
   "Spend a low key night at home with your housemate and friend, energy vampire Colin Robinson.",  
   "Deep down you knew it was a bad idea to spend an evening alone with Colin Robinson.  As an energy vampire, Colin delights in telling you boring stories the entire evening.  At one point you manage to turn on the television, only for Colin to change a setting with the remote control and spend the next hour figuring out how to reconfigure it correctly.  Completely drained of your life force, you pass out on the couch." 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ]
+
+function getStoryline() {
+  return storyLines[]
+}
+
+export {
+  getStoryline,
+  storyLines,
+}

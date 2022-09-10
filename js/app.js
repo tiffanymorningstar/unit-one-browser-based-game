@@ -30,10 +30,22 @@ startBtn.addEventListener('click', () => {
 
 function init() {
 
+story [null]
+
+// have cast image return if story null
+// have start button display if story null
+// have text intro/prompt display if story null
+// have theme song play if story null
 
   render()
 }
 
+function advance() {
+  // if user clicked start button return lazlo image
+  // if user clicked start button return lazlo story text
+  // if user clicked start button return 2 option buttons
+  // if user clicked start button return 2 corresponding option texts
+}
 
 
 
@@ -41,9 +53,8 @@ init()
 //initialize the game, always put it for interaction on game
 
 
-// Find music
-// resize images, and put them in audio file
-// Load music file/s into asset folder
+// Find music and load into asset folder
+// finish resizing images and put them in image file
 // Add HTML for:
 // Each story image (one for each step in storyline)
 // Advancing story buttons
