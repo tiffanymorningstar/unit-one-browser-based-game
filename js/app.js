@@ -5,10 +5,11 @@
 
 /*---------------------------- Variables (state) ----------------------------*/
 
-
+let winner, loser, storyProgress
 
 /*------------------------ Cached Element References ------------------------*/
 
+const startBtn = document.querySelector("#start-button")
 
 
 
@@ -16,29 +17,36 @@
 
 /*----------------------------- Event Listeners -----------------------------*/
 
+startBtn.addEventListener('click', () => {
+  console.log('Button is working')
+})
 
 //Bubbling -We can add an event listener to a top level object, and it can access the individual elements that are nested in the parent element.  Example: 
 
 
 
-/*-------------------------------- Functions --------------------------------*/
+/*-------------------------------- Functions 
+--------------------------------*/
+
+function init() {
+
+
+  render()
+}
+
+
+
+
 init()
 //initialize the game, always put it for interaction on game
 
 
-// PSEUDO CODE
-// Map out basic story, determine how many assets needed
-// Find images and music
-// Upload images on image hosting site
+// Find music
+// resize images, and put them in audio file
 // Load music file/s into asset folder
-// Create variables for:
-// Winner
-// Loser
-// Story Progress
 // Create data file for story text
 // Add HTML for:
 // Each story image (one for each step in storyline)
-// Start button
 // Advancing story buttons
 // Reset button
 // Welcome message text
