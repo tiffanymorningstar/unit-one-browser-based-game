@@ -44,7 +44,6 @@ init()
 // Find music
 // resize images, and put them in audio file
 // Load music file/s into asset folder
-// Create data file for story text
 // Add HTML for:
 // Each story image (one for each step in storyline)
 // Advancing story buttons
