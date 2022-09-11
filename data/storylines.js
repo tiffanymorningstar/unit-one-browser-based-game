@@ -55,10 +55,17 @@ const storyOptionTwoResult = [
 // }
 
 
+function getRandomOptionOne() {
+  return storyOptionOne[Math.floor(Math.random() * storyOptionOne.length)]
+}
 
+function getRandomOptionTwo() {
+  return storyOptionTwo[Math.floor(Math.random() * storyOptionTwo.length)]
+}
 
 export {
-  getIntroStory,
+  getRandomOptionOne,
+  getRandomOptionTwo,
   introStory,
   startStory,
   storyOptionOne,
