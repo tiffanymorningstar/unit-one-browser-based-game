@@ -1,4 +1,4 @@
-import { getStoryline } from "../data/storylines.js"
+import { introStory } from "../data/storylines.js"
 
 /*-------------------------------- Constants --------------------------------*/
 
@@ -46,6 +46,10 @@ function init() {
   render()
 }
 
+function introStory(){
+  if (story = null) return introStory [0]
+  }
+
 
 
 function createStory(evt) {
@@ -75,7 +79,6 @@ init()
 // Reset button
 // Welcome message text
 // Game start prompt text
-// Data file for story text
 // Animation 
 // Create functions for: 
 // Init (settings for a new game)
@@ -89,7 +92,6 @@ init()
 // Images changing when advancing story buttons are clicked
 // Story text changing when advancing story buttons are clicked 
 // Animation playing when player wins 
-// Music playing when advancing story buttons are clicked
 // Congratulatory message displaying when player wins
 // Sorry message playing when player loses
 // Add event listeners for:

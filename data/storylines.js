@@ -18,7 +18,7 @@ const storyOptionOne = [
 ]
 
 const storyOptionOneResult =[
-  "Upon arriving at the Sassy Cat Club, you are greeted by the sights and sounds of a dark and edgy nightclub, where everyone looks like Billy Idol.  The place is packed, it would appear Simon’s establishment is still popular amongst the vampire set.  You are on your way to the bar to order a drink, when Simon spies you from across the room and addresses you as an old friend.  You exchange pleasantries, things are going Splendidly!  Suddenly he notices your Witch Skin hat.  He has always admired it, and asks if he can have it. What do you do?",
+  "Upon arriving at the Sassy Cat Club, you are greeted by the sights and sounds of a dark and edgy nightclub, where everyone looks like Billy Idol.  The place is packed, it would appear Simon’s establishment is still popular amongst the vampire set.  You are on your way to the bar to order a drink, when Simon spies you from across the room and addresses you as an old friend.  You exchange pleasantries, and things are going Splendidly!  Suddenly he notices your Witch Skin hat.  He has always admired it, and asks if he can have it. What do you do?",
   "Clearly upset, Simon calls his large entourage, ‘The Leatherskins’ to gather around him. Completely surrounded by his goons, he threatens you until you hand over the Witch Skin Hat.  After you hand it over, he kicks you out of the club, but not before mentioning that the only reason he stayed friends with you was so that he could one day lay claim to the hat.  Hatless and dejected, you trudge back to Staten Island.  What do you do next?",
   "Arriving at the hospital you discover your Vampire friend and housemate Nandor the Relentless, seated next to his familiar Guiellermo, who is on a hospital gurney in a full body cast.  Nandor took Guillermo to the skies to show him what it was like to fly, but accidently dropped him onto the ground below.  You hear a moaning from the gurney across the way.  The voice sounds familiar.  As you lean in to get a better look, you realize it is Simon The Devious in the room across the hall!  It turns out that after he put on the cursed Witch Skin Hat, he accidentally caused an explosion at the Sassy Cat Club.  You see several personal effects of Simon’s on the chair next to his gurney, including the Witch Skin Hat.  What do you do?",
   "Reunited with your Witch Skin Hat, you feel like you are on top of the world.  However, an old landlord, Jim the Vampire, you have been avoiding for 167 years due to an unpaid rent has tracked you down and is demanding immediate payment. What do you do?",
@@ -50,11 +50,19 @@ const storyOptionTwoResult = [
 
 
 
-function getStoryline() {
-  // return storyLines[return storyLines[Math.floor(Math.random() * storyLines.length)]]
-}
+// function getStoryline() {
+//   // return storyLines[return storyLines[Math.floor(Math.random() * storyLines.length)]]
+// }
+
+
+
 
 export {
-  getStoryline,
-  storyLines,
+  getIntroStory,
+  introStory,
+  startStory,
+  storyOptionOne,
+  storyOptionTwo,
+  storyOptionOneResult,
+  storyOptionTwoResult
 }
