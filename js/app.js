@@ -71,20 +71,39 @@ function createStory(evt) {
 
 function render() {
   cardContainer.innerHTML = ""
-  stories.forEach(story => {
-    appendStory(story)
+  stories.forEach((story, idx) => {
+    appendStory(story, idx)
   })
 }
 
-function appendStory(story) {
+function appendStory(story, idx) {
   let storyCard = document.createElement('div')
   storyCard.classList.add('card', `${story.option.toLowerCase()}`)
   storyCard.innerHTML =
  
   `<div class="card-body">
     <p class="card-text">${story.text}</p>
-  </div>`
+  </div>
+  <footer class="card-footer">
+  <button class"btn delete-btn" id="delete-btn-${idx}>x</button>
+  </footer>
+  `
     cardContainer.appendChild(storyCard)
+}
+
+function deleteStory(evt) {
+  const idx = evt.target.id.replace("delete-btn-", "")
+  quotes.splice(idx, 1)
+  render()
+}
+
+function addDeleteBtnListeners() {
+  const deleteStoryBtns = document.querySelectorAll(".delete-btn")
+  if (deleteStoryBtns.length) {
+    deleteStoryBtns.forEach(deleteQuoteBtn => {
+      deleteQuoteBtn.addEventListener('click', deleteQuote)
+    })
+  }
 }
 
 // function init() {
