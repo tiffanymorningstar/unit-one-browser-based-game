@@ -1,14 +1,10 @@
-const introStory = [
-  "Press the Start Button to begin your adventure"
-]
 
 const startStory = [
-  "You are a 310 year old vampire named ‘Lazlo Cravensworth’, currently staying with your wife Nadja and several vampire friends in Staten Island.  You awaken one evening feeling pretty damn good. With the entire night ahead of you, what do you do?",
-  
+  "You are a 310 year old vampire named ‘Lazlo Cravensworth’, currently staying with your wife Nadja and several vampire friends in Staten Island.  You awaken one evening feeling pretty damn good. With the entire night ahead of you, what do you do?"
 ]
 
 const storyOptionOne = [
-  "Don your favorite, cursed, Witch Skin Hat and head over to the ‘Sassy Cat Club’ to meet up with owner and fellow Vampire, Simon The Devious.", 
+ "Don your favorite, cursed, Witch Skin Hat and head over to the ‘Sassy Cat Club’ to meet up with owner and fellow Vampire, Simon The Devious.", 
   "Thank Simon for his interest in your fabulous Witch Skin Hat, and gently inform him that due to your sentimental attachment you sadly cannot part with it.",
   "Go to the hospital to visit recently injured Guillermo, the familiar to your vampire friend Nandor the Relentless.",
   "Take back your beloved Witch Skin Hat",
@@ -47,26 +43,17 @@ const storyOptionTwoResult = [
 ]
 
 
-
-
-
-// function getStoryline() {
-//   // return storyLines[return storyLines[Math.floor(Math.random() * storyLines.length)]]
+// function getRandomOptionOne() {
+//   return storyOptionOne[Math.floor(Math.random() * storyOptionOne.length)]
 // }
 
-
-function getRandomOptionOne() {
-  return storyOptionOne[Math.floor(Math.random() * storyOptionOne.length)]
-}
-
-function getRandomOptionTwo() {
-  return storyOptionTwo[Math.floor(Math.random() * storyOptionTwo.length)]
-}
+// function getRandomOptionTwo() {
+//   return storyOptionTwo[Math.floor(Math.random() * storyOptionTwo.length)]
+// }
 
 export {
-  getRandomOptionOne,
-  getRandomOptionTwo,
-  introStory,
+  // getRandomOptionOne,
+  // getRandomOptionTwo,
   startStory,
   storyOptionOne,
   storyOptionTwo,

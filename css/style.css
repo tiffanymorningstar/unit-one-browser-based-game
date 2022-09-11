@@ -10,7 +10,7 @@ display: block;
 
 h1 {
   font-family: 'Fjalla One', sans-serif;
-  font-size: 30px;
+  font-size: 45px;
 
   color: white;
   text-align: center;
@@ -25,4 +25,22 @@ h2 {
 }
  button {
   margin: auto;
+
  }
+
+ #story {
+  color: white;
+  text-align: center;
+ }
+
+ #cast {
+  margin: auto;
+ }
+
+ #option-one {
+
+ }
+
+ #option-two {
+
+}
